@@ -52,3 +52,34 @@ class Queue
 end
 
 
+class Map 
+  def initialize
+    @underlying_array = []
+  end
+
+  def set(key, value)
+    pair_index = underlying_array.index {|pair| pair[0] == key }
+    if pair_index
+      underlying_array[pair_index][1] = value
+    else
+      underlying_array.push([key, value])
+    end
+    value
+  end
+
+  def get(key)
+    #iterate through sub arrays and find the first value
+    @twodarray.each do |array|
+      if key == array[0]
+
+    end
+
+  end
+
+  def delete(key)
+  end
+
+  def show
+  end
+
+end
