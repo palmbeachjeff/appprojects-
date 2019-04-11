@@ -1,29 +1,32 @@
-class Stack
+
   class Stack
     def initialize
       # create a var to store stack here!
-      @stack = []
+      @new_array = []
        
     end
 
     def push(el)
       # adds an element to the stack
-      el << stack 
-      stack
+      @new_array.push(el)
     end
 
     def pop
       # removes one element from the stack
-      @stack.pop
-      return @stack
+      @new_array.pop
     end
 
     def peek
       # returns, but doesn't remove, the top element in the stack
-      @stack.first 
+      @new_array.last 
     end
+
+    private
+
+    attr_reader :underlying_array
+
   end
-end
+
 p "--------"
 sandwich = Stack.new
 sandwich.push("bacon")
