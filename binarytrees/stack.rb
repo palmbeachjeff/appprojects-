@@ -27,16 +27,28 @@
 
   end
 
-p "--------"
-sandwich = Stack.new
-sandwich.push("bacon")
-sandwich.push("lettuce")
-sandwich.push("tomato")
-p sandwich
-p "--------"
-sandwich.pop
-p sandwich 
-p "--------"
-p sandwich.peek
-p "--------"
+class Queue
+  def initialize
+    @array = []
+  end
+
+  def enqueue(el)
+    @array.push(el)
+  end
+
+  def dequeue
+    @array.shift
+  end
+
+  def peek
+    @array.first
+  end
+
+  private 
+  
+  attr_reader :array 
+
+
+end
+
 
