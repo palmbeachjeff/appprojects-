@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Here are the ingredients, process and directions so the next time that you make chocolate chip cookies, you don't burn them.">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Cookie Recipe</title>
+  <link rel="stylesheet" type="text/css" href="cookie.css">
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date(); a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-12345678-9', 'auto');
+    ga('send', 'pageview');
+
+  </script>
+  <script src="cookie.js"></script>
+</head>
+
+<body>
+  <header>
+    <img src="https://www.designevo.com/res/templates/thumb_small/yellow-and-brown-biscuit.png" />
+    <nav>
+
+      <ul>
+        <li>
+          <a href="#Description">Description</a>
+        </li>
+        <li>
+          <a href="#Ingredients">Ingredients</a>
+        </li>
+        <li>
+          <a href="#Directions">Directions</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <aside>
+    <h2>
+      <a name="Ingredients" />Ingredients</h2>
+    <ul>
+      <li>Butter</li>
+      <li>White Sugar</li>
+      <li>Brown sugar</li>
+      <li>Flour</li>
+      <li>Sea Salt</li>
+      <li>Chocolate Chips</li>
+    </ul>
+  </aside>
+  <section>
+    <h1>Chocolate Chip Cookies</h1>
+    <figure>
+      <img src="https://pinchofyum.com/wp-content/uploads/Chocolate-Chip-Cookies-Recipe.jpg" />
+    </figure>
+
+    <figcaption>
+      <a href="https://en.wikipedia.org/wiki/Chocolate_chip_cookie">The history of this cookie</a>
+    </figcaption>
+
+    <h2>
+      <a name="Description" />Description</a>
+    </h2>
+    <p>This is the best chocolate chip cookie recipe ever! No funny ingredients, no chilling time, etc. Just a simple, straightforward,
+      amazingly delicious, doughy yet still fully cooked, chocolate chip cookie that turns out perfectly every single time!</p>
+
+
+
+    <h2>
+      <a name="Directions" />Directions</a>
+    </h2>
+    <ol>
+      <li>Soften butter.</li>
+      <li>Measure the flour correctly.</li>
+      <li>Use LOTS of chocolate chips.</li>
+      <li>DO NOT over-bake these chocolate chip cookies!</li>
+    </ol>
+  </section>
+
+  <section id="reviews">
+    <h2>Reviews</h2>
+    <form id="review-form">
+      <label for="name">Name</label>
+      <input type="text" name="name" id="name">
+      <label for="rating">Rating</label>
+
+      1
+      <input type="radio" name="rating" value="1" checked> 2
+      <input type="radio" name="rating" value="2"> 3
+      <input type="radio" name="rating" value="3"> 4
+      <input type="radio" name="rating" value="4"> 5
+      <input type="radio" name="rating" value="5">
+      <label for="expertise">Cooking Expertise:</label>
+      <select id="expertise" name="expertise">
+        <option value="">Select Cooking Expertise</option>
+        <option value="sometimes">Sometimes Cook</option>
+        <option value="everyday">Cook Everyday</option>
+        <option value="hobby">Cooking is a Hobby</option>
+        <option value="pro">Professional Chef</option>
+      </select>
+      <label for="review">Review</label>
+      <textarea id="review"></textarea>
+      <input type="submit" value="Send">
+
+    </form>
+  </section>
+
+  <footer>
+    <p>Original Receipe by
+      <a href="https://en.wikipedia.org/wiki/Elon_Musk">Elon Musk</a>
+    </p>
+  </footer>
+</body>
+
+</html>
