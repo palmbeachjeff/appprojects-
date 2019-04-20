@@ -4,6 +4,8 @@ body {
   /* If the user cannot load the Arial font, the sans-serif font is used */
   font-family: Arial, sans-serif;
   background-color: #FEFFF1;
+  width: 900px; 
+  margin: 0 auto; 
 }
 
 h1 {
@@ -72,3 +74,44 @@ h2 + .user_review {
     border-top: 1px solid black;
 }
 
+/* Pick the correct display property to position the nav next to the logo. */
+
+nav ul {
+  display: inline-block;
+}
+
+nav ul li {
+  display: block;
+  padding: 20px; 
+}
+
+section {
+  display: inline-block; 
+  width: 700px;
+}
+
+aside { 
+  display: inline-block; 
+  width: 180px;
+  vertical-align: top; 
+}
+
+.ingredients-list li {
+  margin: 15px auto 15px; 
+}
+
+ol li {
+  margin: 15px auto 15px; 
+}
+
+input {
+  display: inline-block; 
+}
+
+select {
+  margin: 50px; 
+}
+
+input["text"] {
+  width: 100px; 
+}
